@@ -1,0 +1,11 @@
+---
+title: "Title"
+author: "Kris Sankaran"
+date: "`r Sys.Date()`"
+output:
+  bookdown::pdf_book:
+    includes:
+      in_header: preamble.tex
+bibliography: ["bibliography.bib"]
+link-citations: yes
+---
