@@ -9,7 +9,6 @@
 (require 'iso-transl)
 
 (setq inhibit-startup-message t)
-(global-linum-mode 1)
 (set-default 'truncate-lines t)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
@@ -60,4 +59,5 @@
 (setq auto-insert-directory "~/.emacs.d/templates/")
 (setq auto-insert-query nil)
 (define-auto-insert "\.py" "template.py")
-(define-auto-insert "\.R" "template.R")
+(define-auto-insert "\.R$" "template.R")
+(define-auto-insert "\.Rmd" "template.Rmd")
